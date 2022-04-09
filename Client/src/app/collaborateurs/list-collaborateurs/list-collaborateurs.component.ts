@@ -10,7 +10,7 @@ export class ListCollaborateursComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    var test = 0;
+    
   }
 
 }
