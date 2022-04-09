@@ -11,6 +11,7 @@ export class ListCollaborateursComponent implements OnInit {
 
   ngOnInit(): void {
     
+    var test = 0;
   }
 
 }
