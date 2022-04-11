@@ -12,6 +12,9 @@ namespace API_MySIRH.Data
         public DbSet<ToDoList> ToDoLists { get; set; }
 
         public DbSet<Memo> Memos { get; set; }
+
+        public DbSet<Collaborater> Collaborators { get; set; }
+
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
             
