@@ -1,6 +1,6 @@
 ﻿namespace API_MySIRH.DTOs
 {
-    public class CollaboraterDTO : DtoBase
+    public class CollaborateurDTO : DtoBase
     {
         public int RegistrationNumber { get; set; }
         public string Login { get; set; }

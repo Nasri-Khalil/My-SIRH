@@ -1,6 +1,6 @@
 ﻿namespace API_MySIRH.Entities
 {
-    public class Collaborater :EntityBase
+    public class Collaborateur :EntityBase
     {
         public int RegistrationNumber { get; set; }
         public string Login { get; set; }

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+﻿using API_MySIRH.DTOs;
+=======
 using API_MySIRH.DTOs;
+>>>>>>> f7d5c0dfa0a0f73f7d5c69fd981b1cb5e5d6b4a4
 using API_MySIRH.Entities;
 using API_MySIRH.Interfaces;
 using Microsoft.AspNetCore.Mvc;
