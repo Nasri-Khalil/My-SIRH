@@ -13,7 +13,7 @@ namespace API_MySIRH.Data
 
         public DbSet<Memo> Memos { get; set; }
 
-        public DbSet<Collaborater> Collaborators { get; set; }
+        //public DbSet<Collaborater> Collaborators { get; set; }
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
@@ -53,7 +53,113 @@ namespace API_MySIRH.Data
             return base.SaveChangesAsync();
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+           modelBuilder.Entity<Collaborater>().HasData(
+                new Collaborater() {
+                    Agency = "OUJDA",
+                    Civility = true,
+                    CreationDate = DateTime.Now,
+                    ModificationDate = DateTime.Now,
+                    DateOf1stExperience = DateTime.Now,
+                    DateOfBirth = DateTime.Now,
+                    Diplomas = "2022:Ingenieur",
+                    Email = "Knaimi@sqli.com",
+                    EntryDate = DateTime.Now,
+                    FullName = "khalil Naimi",
+                    InternshipStartDate = DateTime.Now,
+                    Level = "Junior",
+                    Login = "Knaimi",
+                    RegistrationNumber = 32062,
+                    Post = "Ingénieur Concepteur développeur",
+                    SkillsCenter = "Skill Microsoft",
+
+                },
+                new Collaborater() {
+                    Agency = "OUJDA",
+                    Civility = true,
+                    CreationDate = DateTime.Now,
+                    ModificationDate = DateTime.Now,
+                    DateOf1stExperience = DateTime.Now,
+                    DateOfBirth = DateTime.Now,
+                    Diplomas = "2022:Ingenieur",
+                    Email = "Knaimi@sqli.com",
+                    EntryDate = DateTime.Now,
+                    FullName = "khalil Naimi",
+                    InternshipStartDate = DateTime.Now,
+                    Level = "Junior",
+                    Login = "Knaimi",
+                    RegistrationNumber = 32062,
+                    Post = "Ingénieur Concepteur développeur",
+                    SkillsCenter = "Skill Microsoft",
+
+                },
+                new Collaborater() {
+                    Agency = "OUJDA",
+                    Civility = true,
+                    CreationDate = DateTime.Now,
+                    ModificationDate = DateTime.Now,
+                    DateOf1stExperience = DateTime.Now,
+                    DateOfBirth = DateTime.Now,
+                    Diplomas = "2022:Ingenieur",
+                    Email = "Knaimi@sqli.com",
+                    EntryDate = DateTime.Now,
+                    FullName = "khalil Naimi",
+                    InternshipStartDate = DateTime.Now,
+                    Level = "Junior",
+                    Login = "Knaimi",
+                    RegistrationNumber = 32062,
+                    Post = "Ingénieur Concepteur développeur",
+                    SkillsCenter = "Skill Microsoft",
+
+                },
+                new Collaborater() {
+                    Agency = "OUJDA",
+                    Civility = true,
+                    CreationDate = DateTime.Now,
+                    ModificationDate = DateTime.Now,
+                    DateOf1stExperience = DateTime.Now,
+                    DateOfBirth = DateTime.Now,
+                    Diplomas = "2022:Ingenieur",
+                    Email = "Knaimi@sqli.com",
+                    EntryDate = DateTime.Now,
+                    FullName = "khalil Naimi",
+                    InternshipStartDate = DateTime.Now,
+                    Level = "Junior",
+                    Login = "Knaimi",
+                    RegistrationNumber = 32062,
+                    Post = "Ingénieur Concepteur développeur",
+                    SkillsCenter = "Skill Microsoft",
+
+                },
+                new Collaborater() {
+                    Agency = "OUJDA",
+                    Civility = true,
+                    CreationDate = DateTime.Now,
+                    ModificationDate = DateTime.Now,
+                    DateOf1stExperience = DateTime.Now,
+                    DateOfBirth = DateTime.Now,
+                    Diplomas = "2022:Ingenieur",
+                    Email = "Knaimi@sqli.com",
+                    EntryDate = DateTime.Now,
+                    FullName = "khalil Naimi",
+                    InternshipStartDate = DateTime.Now,
+                    Level = "Junior",
+                    Login = "Knaimi",
+                    RegistrationNumber = 32062,
+                    Post = "Ingénieur Concepteur développeur",
+                    SkillsCenter = "Skill Microsoft",
+
+                });
+            modelBuilder.Entity<ToDoList>().HasData(
+                new ToDoList() { CreationDate = DateTime.Now, Description = "dasfsdf", ModificationDate = DateTime.Now, Ordre = 5, Titre = "dasdasda", ToDoItemList = { new ToDoItem() { Titre = "fsdfsdf" } } },
+                new ToDoList() { CreationDate = DateTime.Now, Description = "dasfsdf", ModificationDate = DateTime.Now, Ordre = 5, Titre = "dasdasda", ToDoItemList = { new ToDoItem() { Titre = "fsdfsdf" } } },
+                new ToDoList() { CreationDate = DateTime.Now, Description = "dasfsdf", ModificationDate = DateTime.Now, Ordre = 5, Titre = "dasdasda", ToDoItemList = { new ToDoItem() { Titre = "fsdfsdf" } } }
+                );
+        }
     }
 
 }
+
+
 
