@@ -29,8 +29,6 @@ builder.Services.AddScoped<IToDoListService, ToDoListService>();
 builder.Services.AddScoped<IToDoItemService, ToDoItemService>();
 builder.Services.AddScoped<IMemoService, MemoService>();
 builder.Services.AddScoped<IMemoRepository, MemoRepository>();
-builder.Services.AddScoped<ICollaborateurService, CollaborateurService>();
-builder.Services.AddScoped<ICollaborateurRepository, CollaborateurRepository>();
 
 
 //DBContext Config 

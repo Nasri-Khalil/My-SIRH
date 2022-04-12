@@ -16,6 +16,8 @@ namespace API_MySIRH.Helpers
                 .ForMember(s => s.ToDoItemList, c => c.MapFrom(m => m.ToDoItemList));
             CreateMap<Memo, MemoDTO>();
             CreateMap<MemoDTO, Memo>();
+            CreateMap<CollaborateurDTO, Collaborateur>();
+            CreateMap<Collaborateur, CollaborateurDTO>();
         }
 
     }

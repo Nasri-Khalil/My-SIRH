@@ -1,14 +1,15 @@
 ﻿using API_MySIRH.DTOs;
+using API_MySIRH.Entities;
 
 namespace API_MySIRH.Interfaces
 {
     public interface ICollaborateurRepository
     {
-        Task<IEnumerable<CollaboraterDTO>> GetCollaboraters();
-        Task<IEnumerable<CollaboraterDTO>> GetCollaborator(int id);
-        Task UpdateCollaborator(int id, CollaboraterDTO collaborator);
-        Task<CollaboraterDTO> AddCollaborator(CollaboraterDTO collaborator);
-        Task DeleteCollaborator(int id);
-        bool CollaboratorExists(int id);
+        Task<IEnumerable<Collaborateur>> GetCollaborateurs();
+        Task<Collaborateur> GetCollaborateur(int id);
+        Task UpdateCollaborateur(int id, Collaborateur collaborateur);
+        Task<Collaborateur> AddCollaborateur(Collaborateur collaborateur);
+        Task DeleteCollaborateur(int id);
+        bool CollaborateurExists(int id);
     }
 }

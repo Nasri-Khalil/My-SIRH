@@ -29,8 +29,13 @@ builder.Services.AddScoped<IToDoListService, ToDoListService>();
 builder.Services.AddScoped<IToDoItemService, ToDoItemService>();
 builder.Services.AddScoped<IMemoService, MemoService>();
 builder.Services.AddScoped<IMemoRepository, MemoRepository>();
+<<<<<<< HEAD
+/*builder.Services.AddScoped<ICollaborateurRepository, ICollaborateurRepository>();
+builder.Services.AddScoped<ICollaborateurService, ICollaborateurService>();*/
+=======
 builder.Services.AddScoped<ICollaborateurService, CollaborateurService>();
 builder.Services.AddScoped<ICollaborateurRepository, CollaborateurRepository>();
+>>>>>>> c7416aabfd6698c6b5fde1dee82914ab419ce4ce
 
 
 //DBContext Config 
